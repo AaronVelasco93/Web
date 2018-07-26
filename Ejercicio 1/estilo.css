@@ -1,0 +1,62 @@
+h1 {
+  font: normal 2em Arial, sans-serif;
+  background: -webkit-linear-gradient(top, #00f, #0CF);
+  background: -o-linear-gradient(top, #00f, #0CF);
+  width: 35%;
+  border-radius: 10px;
+  margin: 15px auto;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  box-shadow: #00F 8px 8px 5px;
+  text-shadow: white 2px 2px 5px;
+}
+
+h2 {
+  font: bold 1.7em Arial, sans-serif;
+  margin: 0px;
+  pading: 5px 0px 5px 0px;
+  color: black;
+}
+
+section {
+  width: 91%;
+  border-top: 1px dashed #999;
+  margin: 15px auto;
+}
+
+figure {
+  float: left;
+}
+
+figure img {
+    padding: 4px;
+    background-color: #999;
+    border-radius: 15px;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s;
+    -o-transition: -o-transform 0.3s ease-in-out 0.4s;
+    box-shadow:#999 5px 5px 10px;
+}
+
+figure img:hover{
+  -webkit-transform:scale(1.2);
+  -o-trasnform:scale(1.2);
+
+}
+
+figcaption{
+  font-family: Arial;
+  font-size:2em;
+  text-aling:center;
+  margin-top: 5px;
+}
+footer{
+  clear: both;/*se rompe el float*/
+  padding-top: 15px;
+}
+
+footer p{
+  font: 1.6em Georgia;
+  color: #999;
+  margin:10px 8px;
+}
