@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>formulario</title>
+</head>
+
+    <style>
+        table{
+            text-align: center;
+            background-color: aqua;
+            width: 25%;
+            margin: auto;
+            border: 2px aqua dashed;
+            
+            
+        }
+        
+        td{
+            padding: 15px;
+            
+        }
+    
+        
+    </style>    
+
+<body>
+
+    <form name="registro_usuarios" method="get">
+      
+        <table>
+            <tr>
+                <td>Nombr:e</td>
+                <td><input type="text" name="nombre" id="nombre"></td>
+                <tr>
+                <td>Apellido:</td>
+                <td><input type="text" name="apellido" id="apellido"> </td>
+                <tr>
+                <td>Edad: </td>
+                <td> <input type="text" name="edad" id="edad" min="1" max="100"> </td>
+            </tr>
+               <td> <input type="submit" name="enviar" value="Registrar"> </td>
+                
+        </table>
+         
+       
+        
+        
+    </form>
+
+
+<script>
+    
+        function comenzar(){
+            var nombre=document.getElementById("nombre");
+            var apellido=document.getElementById("apellido");
+            
+            
+            nombre.addEventListener("input",validar,false);
+            apellido.addEventListener("input",validar,false);
+            
+            validar();
+        }
+    
+        function validar(){
+            
+                if(nombre.value=="" && apellido.value==""){
+                    nombre.setCustomValidity("Introduce nombre o apellido");
+                    nombre.style.background="red";
+                    apellido.style.background="red";
+                }else{
+                    
+                    nombre.setCunstomValidity("");
+                    nombre.style.background="#FFFFFF";
+                    apellido.style.background="#FFFFFF";
+                    
+                }
+            
+            
+        }
+        
+    
+        window.addEventListener("load",comenzar,false);
+    
+
+    
+    </script>
+</body>
+
+</html>

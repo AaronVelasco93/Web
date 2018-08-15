@@ -12,18 +12,28 @@
 
 
   <form id="miformulario" name="miformulario" method="get">
-<!--
 
-  Email: &nbsp<input type="email" name="correo" value="correo"> <br><br>
+  Email: &nbsp<input type="email" name="correo" value="correo" required multiple > <br><br>
 
-  Buscar: &nbsp <input type="search" name="buscar" value="busqueda"> <br><br>
--->
-
-  Edad: &nbsp <input type="range" name="edad" value="edad"step="5"  >
+  Buscar: &nbsp <input type="search" name="buscar" value="busqueda" autofocus > <br><br>
   
+  
+
+  Edad: &nbsp <input type="range" name="edad" value="edad"step="5" min="5" max="105" >
+  <br>
+  <input type="week" name="fecha" id="fecha" >
+  <br>
+  <input type="time" name="tiempo" id="tiempo">
+  <br>
+  <input pattern="[0-9]{5}" name="cpostal" id="cpostal" placeholder="5 digitos">
   
 
   <input type="submit" name="" value="enviar">
+  <br>
+  
+  <img src="1.jpg" width="200" height="200">
+  <br>
+  Nombre: <input type="text" name="nombre" id="nombre" form="miformulario" >
 
   </form>
 </section>
